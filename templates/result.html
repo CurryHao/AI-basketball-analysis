@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><title>分析结果</title></head>
+<body style="font-family:sans-serif;max-width:960px;margin:40px auto;">
+<h1>🏀 分析结果</h1>
+<video src="{{ url_for('output_file', fname=video) }}" controls style="width:100%"></video>
+<h2>统计</h2>
+<ul>
+  <li>投篮：{{ stats.made }} / {{ stats.attempts }}（命中率 {{ stats.fg_pct }}%）</li>
+  <li>平均肘关节角度：{{ stats.avg_elbow_angle }}°</li>
+  <li>平均膝关节角度：{{ stats.avg_knee_angle }}°</li>
+  <li>平均出手角度：{{ stats.avg_release_angle }}°</li>
+  <li>平均持球时间：{{ stats.avg_ball_in_hand_s }} 秒</li>
+</ul>
+<p><a href="/">再分析一支视频</a></p>
+</body></html>

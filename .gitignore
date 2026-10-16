@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# 数据集（404MB，用 download_dataset.py 下载）
+data/
+
+# 训练输出
+runs/
+
+# 临时
+.tmp/
+output/
+uploads/
+testdata/*_analyzed.*
+testdata/dbg_*.jpg
+
+# 系统
+.DS_Store
